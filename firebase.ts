@@ -1,10 +1,10 @@
 import firebase from 'firebase/compat/app';
-import 'firebase/compat/database'; // Import the Realtime Database module
+import 'firebase/compat/database'; 
 
 const firebaseConfig = {
   apiKey: 'YOUR_API_KEY',
   authDomain: 'YOUR_AUTH_DOMAIN',
-  databaseURL: 'YOUR_DATABASE_URL', // Add the database URL
+  databaseURL: 'YOUR_DATABASE_URL', 
   projectId: 'YOUR_PROJECT_ID',
   storageBucket: 'YOUR_STORAGE_BUCKET',
   messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
@@ -15,4 +15,4 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 
-export const db = app.database(); // Use app.database() for the Realtime Database
+export const db = app.database(); 
